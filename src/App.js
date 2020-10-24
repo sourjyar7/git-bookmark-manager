@@ -1,6 +1,7 @@
 import React from 'react';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import Card from './components/utils/card/card';
+import SearchBar from './components/utils/searchBar/searchBar';
 
 
 
@@ -11,6 +12,7 @@ function App() {
 
   return (
     <div className="App">
+      <SearchBar></SearchBar>
       <Card titleText={titleText} list={list} isHome={true}></Card>
     </div>
   );

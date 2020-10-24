@@ -4,7 +4,7 @@ import './card.css';
 
 const Card = ({ titleText , list ,isHome }) => {
     return ( 
-        <div className="container">
+        <div className="container my-4">
         <div className="card rounded">
             
             <div className="card-header">
