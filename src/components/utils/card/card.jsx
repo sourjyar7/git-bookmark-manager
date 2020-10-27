@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaPlus, FaTrashAlt } from 'react-icons/fa';
+import ItemList from '../itemList/itemList';
 import './card.css';
 
 const Card = ({ titleText , list ,isHome }) => {
@@ -7,18 +7,12 @@ const Card = ({ titleText , list ,isHome }) => {
         <div className="container my-4">
         <div className="card rounded">
             
-            <div className="card-header">
+            <div className="card-header bg-dark text-light">
                 <h5 className="card-title">{titleText}</h5>
             </div>
-            <ul className="list-group list-group-flush">
-              { list.map((item , index) => <li key={index} className="list-group-item onHoverLi">{item}
-                { isHome?(<span className="float-right onHoverIcons"><FaTrashAlt/></span>):
-                  (<span className="float-right onHoverIcons"><FaPlus/></span>)
-                }
-                </li>
-                )
-              }
-            </ul>
+           
+            <ItemList list={list} isHome={isHome}/>
+            
             
         </div>
         </div>
