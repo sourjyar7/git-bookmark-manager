@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { FaPlus, FaTrashAlt } from 'react-icons/fa';
+import { CardContext } from '../../../contexts/utilsContexts/cardContext/cardContext';
 
-const Item = ({ item, isHome }) => {
+const Item = ({ item }) => {
+
+  const { isHome } = useContext(CardContext);
     
    return ( 
         

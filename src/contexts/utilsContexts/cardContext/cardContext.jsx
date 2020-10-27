@@ -7,9 +7,9 @@ const CardContextProvider = (props) => {
     const [ isHome, setisHome ] = useState(true);
 
     return ( 
-        <CardContextProvider value={{ isHome , setisHome }}>
+        <CardContext.Provider value={{ isHome , setisHome }}>
             {props.children}
-        </CardContextProvider>
+        </CardContext.Provider>
      );
 }
  
