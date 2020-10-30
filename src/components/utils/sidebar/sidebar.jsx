@@ -7,9 +7,20 @@ import { FaGithubSquare } from 'react-icons/fa';
 
 const Sidebar = (props) => {
     
-    const [ stars, setStars ] = useState(2); 
-    const handleChange = (value) =>{
+    const [ stars, setStars ] = useState(18);
+    const [ size, setSize ] = useState(50);
+    const [ forks, setForks ] = useState(8);
+
+    const handleStarChange = (value) =>{
         setStars(value);
+    }
+
+    const handleSizeChange = (value) =>{
+        setSize(value);
+    }
+
+    const handleForkChange = (value) =>{
+        setForks(value);
     }
 
     return ( 
@@ -28,21 +39,21 @@ const Sidebar = (props) => {
             <hr/>
             <div className="m-4">
                 <span className="text-center">Number Of Stars</span>   
-                <Slider value={stars} onChange={handleChange} 
+                <Slider value={stars} onChange={handleStarChange} 
                 labels={{ 0: '0', 50: '50', 100: '100>'}}
                 tooltip={true}
                 />
              </div>
              <div className="mx-4 my-5">
                 <span className="text-center">Number Of Forks</span>   
-                <Slider value={stars} onChange={handleChange} 
+                <Slider value={forks} onChange={handleForkChange} 
                 labels={{ 0: '0', 50: '50', 100: '100>'}}
                 tooltip={true}
                 />
              </div>
              <div className="mx-4 my-5">
                 <span className="text-center">Repo Size</span>   
-                <Slider value={stars} onChange={handleChange} 
+                <Slider value={size} onChange={handleSizeChange} 
                 labels={{ 0: '0', 50: '50', 100: '100>'}}
                 tooltip={true}
                 />
