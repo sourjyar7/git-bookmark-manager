@@ -2,7 +2,7 @@ import React from 'react';
 import ItemList from '../itemList/itemList';
 import './card.css';
 
-const Card = ({ titleText , list }) => {
+const Card = ({ titleText }) => {
     return ( 
         <div className="container my-4">
         <div className="card rounded">
@@ -11,7 +11,7 @@ const Card = ({ titleText , list }) => {
                 <h5 className="card-title">{titleText}</h5>
             </div>
            
-            <ItemList list={list}/>
+            <ItemList/>
             
             
         </div>
