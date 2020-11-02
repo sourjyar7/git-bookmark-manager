@@ -11,7 +11,7 @@ const SearchBar = (props) => {
             </div>
             <input className="form-control my-0 py-1 amber-border" type="text" placeholder={props.placeholder} aria-label="Search"/>
             </div>
-      </div>
+       </div>
      );
 }
  

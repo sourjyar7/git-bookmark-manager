@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <CardContextProvider>
         <ItemListContextProvider> 
-          <Sidebar/>
+         <Home/>
         </ItemListContextProvider>
       </CardContextProvider>
     </div>
