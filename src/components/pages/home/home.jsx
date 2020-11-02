@@ -2,6 +2,7 @@ import React from 'react'
 import Card from '../../utils/card/card';
 import SearchBar from '../../utils/searchBar/searchBar';
 import Sidebar from '../../utils/sidebar/sidebar';
+import Jumbotron from '../../utils/jumbotron/jumbotron';
 
 const Home = (props) => {
     
@@ -16,6 +17,7 @@ const Home = (props) => {
                   </div>
 
                   <div className="col-md-9">
+                      <Jumbotron/>
                       <SearchBar placeholder="Search repositories...."/>
                       <Card titleText={titleText}></Card>
                   </div>
